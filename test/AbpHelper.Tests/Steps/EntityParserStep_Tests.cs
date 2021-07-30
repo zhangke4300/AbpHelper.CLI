@@ -29,7 +29,7 @@ namespace EasyApp.AbpHelper.Tests.Steps
             try
             {
                 file = Path.GetTempFileName();
-                File.WriteAllText(file, code);
+                File.WriteAllText(file, code, System.Text.Encoding.UTF8);
                 await action(file);
             }
             finally

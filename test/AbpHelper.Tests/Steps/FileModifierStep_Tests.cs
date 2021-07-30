@@ -35,7 +35,7 @@ namespace EasyApp.AbpHelper.Tests.Steps
             try
             {
                 file = Path.GetTempFileName();
-                await File.WriteAllTextAsync(file, contents);
+                await File.WriteAllTextAsync(file, contents, System.Text.Encoding.UTF8);
                 await action(file);
                 return await File.ReadAllTextAsync(file);
             }

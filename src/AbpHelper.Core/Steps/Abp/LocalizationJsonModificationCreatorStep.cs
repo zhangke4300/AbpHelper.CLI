@@ -31,7 +31,7 @@ namespace EasyAbp.AbpHelper.Core.Steps.Abp
             var localizations = await context.EvaluateAsync(LocalizationJson, cancellationToken);
             var jNew = JObject.Parse(localizations);
 
-            var jsonText = await File.ReadAllTextAsync(targetFile);
+            var jsonText = await File.ReadAllTextAsync(targetFile, System.Text.Encoding.UTF8);
             var jDoc = JObject.Parse(jsonText);
             var jTexts = jDoc["texts"] ?? jDoc["Texts"]!;
 

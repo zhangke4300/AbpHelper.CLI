@@ -1,6 +1,8 @@
 ﻿using System;
 using EasyAbp.AbpHelper.Core.Commands.Module.Add;
+using EasyAbp.AbpHelper.Core.Commands.Module.AddRef;
 using EasyAbp.AbpHelper.Core.Commands.Module.Remove;
+using EasyAbp.AbpHelper.Core.Commands.Module.RemoveRef;
 using JetBrains.Annotations;
 
 namespace EasyAbp.AbpHelper.Core.Commands.Module
@@ -12,6 +14,8 @@ namespace EasyAbp.AbpHelper.Core.Commands.Module
         {
             AddCommand<AddCommand>();
             AddCommand<RemoveCommand>();
+            AddCommand<AddRefCommand>();
+            AddCommand<RemoveRefCommand>();
         }
     }
 }

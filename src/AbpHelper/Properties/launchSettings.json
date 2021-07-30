@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AbpHelper": {
+      "commandName": "Project",
+      "commandLineArgs": "abphelper module removeref -soecahlw -d D:\\Code\\abp\\my-abp\\MyApp\\Zbr.TrainSys D:\\Code\\abp\\my-abp\\MyApp\\Zbr.CourseSys\\src"
+    }
+  }
+}

@@ -37,7 +37,7 @@ namespace EasyAbp.AbpHelper.Core.Steps.Common
                 Logger.LogInformation($"Directory {dir} created.");
             }
 
-            await File.WriteAllTextAsync(targetFile, Contents);
+            await File.WriteAllTextAsync(targetFile, Contents, System.Text.Encoding.UTF8);
             Logger.LogInformation($"File {targetFile} generated.");
 
             return Done();

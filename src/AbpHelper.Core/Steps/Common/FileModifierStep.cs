@@ -95,7 +95,7 @@ namespace EasyAbp.AbpHelper.Core.Steps.Common
                 NEXT_LINE: ;
             }
 
-            await File.WriteAllTextAsync(targetFile, newFile.ToString());
+            await File.WriteAllTextAsync(targetFile, newFile.ToString(), System.Text.Encoding.UTF8);
 
             return Done();
         }

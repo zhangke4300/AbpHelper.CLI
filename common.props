@@ -1,10 +1,10 @@
 <Project>
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <Version>0.8.1</Version>
-    <PackageVersion>0.8.1</PackageVersion>
-    <AssemblyVersion>0.8.1</AssemblyVersion>
-    <FileVersion>0.8.1</FileVersion>
+    <Version>10.8.1</Version>
+    <PackageVersion>10.8.1</PackageVersion>
+    <AssemblyVersion>10.8.1</AssemblyVersion>
+    <FileVersion>10.8.1</FileVersion>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>EasyAbp Team</Authors>
